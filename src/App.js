@@ -1,30 +1,18 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Layout, Header, Drawer, Navigation, Content } from 'react-mdl';
+import { Layout, Content } from 'react-mdl';
+import HeaderNav from './components/header';
+import Main from "./components/main";
 
 class App extends Component{
   render(){
     return (
       <div className="demo-big-content">
     <Layout>
-        <Header title="Title" scroll>
-            <Navigation>
-                <a href="/">Link</a>
-                <a href="/">Link</a>
-                <a href="/">Link</a>
-                <a href="/">Link</a>
-            </Navigation>
-        </Header>
-        <Drawer title="Title">
-            <Navigation>
-                <a href="/">Link</a>
-                <a href="/">Link</a>
-                <a href="/">Link</a>
-                <a href="/">Link</a>
-            </Navigation>
-        </Drawer>
+        <HeaderNav />
         <Content>
             <div className="page-content" />
+            <Main />
         </Content>
     </Layout>
 </div>

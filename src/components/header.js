@@ -6,7 +6,7 @@ class HeaderNav extends Component{
     render(){
       return (
         <div className="demo-big-content">
-        <Header title="Cristina Rodriguez" scroll>
+        <Header className="header-color" title="Cristina Rodriguez" scroll>
               <Navigation>
                   <Link to="/aboutme">About Me</Link>
                   <Link to="/projects">Projects</Link>

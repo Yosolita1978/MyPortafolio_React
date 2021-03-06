@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 class HeaderNav extends Component{
     render(){
       return (
-        <div className="demo-big-content">
-        <Header className="header-color" title="Cristina Rodriguez" scroll>
+        <div >
+        <Header className="header-color" title={<Link style={{textDecoration: 'none', color: 'white'}} to="/">Cristina Rodriguez</Link>} scroll>
               <Navigation>
                   <Link to="/aboutme">About Me</Link>
                   <Link to="/projects">Projects</Link>

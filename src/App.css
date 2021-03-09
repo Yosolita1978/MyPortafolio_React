@@ -77,3 +77,34 @@
   font-size: 5em;
   padding: 8px;
 }
+
+.banner-text-about{
+  background-color: white;
+  opacity: .8;
+  width: 85%;
+  margin: auto;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.banner-text-about h4{
+  color: #003AA7;
+  text-align: center;
+}
+
+.banner-text-about p {
+    color: black;
+    font-size: 22px;
+    padding: 1em;
+    text-align:left;
+    text-indent: 4 em;
+    line-height: 1.6;
+    }
+
+.banner-text-about hr {
+  width: 50%;
+  margin: auto;
+  border: 0;
+  height: 1px;
+  }

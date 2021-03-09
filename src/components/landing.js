@@ -29,7 +29,7 @@ class LandingPage extends Component{
 </a>
 
 {/* Google Store */}
-<a href="http://google.com" rel="noopener noreferrer" target="_blank">
+<a href="https://play.google.com/store/apps/developer?id=yosola" rel="noopener noreferrer" target="_blank">
   <i className="fab fa-google-play" aria-hidden="true" />
 </a>
 

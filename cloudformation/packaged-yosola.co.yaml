@@ -1,0 +1,31 @@
+AWSTemplateFormatVersion: 2010-09-09
+Resources:
+  StaticSite:
+    Type: AWS::CloudFormation::Stack
+    Properties:
+      TemplateURL: https://s3.us-east-1.amazonaws.com/artifacts2.yosola.co/bdd0e52d01ed5a10f55a5e88a7382f5a.template
+      Parameters:
+        DomainName: yosola.co
+        SubDomain: www
+  ApexRedirect:
+    Type: AWS::CloudFormation::Stack
+    Properties:
+      TemplateURL: https://s3.us-east-1.amazonaws.com/artifacts2.yosola.co/38b084b58b6d74d289341c5855867083.template
+      Parameters:
+        FromDomain: yosola.co
+        ToDomain: www.yosola.co
+        SSLCertificateArn:
+          Fn::GetAtt:
+          - StaticSite
+          - Outputs.SSLCertificateArn
+        HostedZoneId:
+          Fn::GetAtt:
+          - StaticSite
+          - Outputs.HostedZoneId
+Outputs:
+  NameServers:
+    Description: Name servers to set in your domain registrar.
+    Value:
+      Fn::GetAtt:
+      - StaticSite
+      - Outputs.NameServers

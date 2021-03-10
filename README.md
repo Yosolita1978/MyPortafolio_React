@@ -1,4 +1,4 @@
-![Screenshoot](https://www.yosola.co/)
+![Screenshoot](https://github.com/Yosolita1978/MyPortafolio_React/blob/main/public/Website.png?raw=true)
 
 # Author
 

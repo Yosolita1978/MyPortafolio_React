@@ -4,9 +4,11 @@ import { Layout, Content } from 'react-mdl';
 import HeaderNav from './components/header';
 import Main from "./components/main";
 
+
 class App extends Component{
   render(){
     return (
+      
       <div className="demo-big-content">
     <Layout>
         <HeaderNav />
